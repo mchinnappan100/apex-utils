@@ -1,0 +1,27 @@
+class_name,start_linenumber,testClass,has_binding,soql_query,sosl_query,dml_operations,modified_soql,explain_plan
+TestClass.cls,3,false,false,"[SELECT Id, Name FROM Account WHERE Industry = 'Tech']",,,"SELECT Id, Name FROM Account WHERE Industry = 'Tech'","[
+  {
+    ""cardinality"": 28,
+    ""fields"": [],
+    ""leadingOperationType"": ""TableScan"",
+    ""notes"": [
+      {
+        ""description"": ""Not considering filter for optimization because unindexed"",
+        ""fields"": [
+          ""IsDeleted""
+        ],
+        ""tableEnumOrId"": ""Account""
+      },
+      {
+        ""description"": ""Not considering filter for optimization because unindexed"",
+        ""fields"": [
+          ""Industry""
+        ],
+        ""tableEnumOrId"": ""Account""
+      }
+    ],
+    ""relativeCost"": 0.7244444444444444,
+    ""sobjectCardinality"": 1048,
+    ""sobjectType"": ""Account""
+  }
+]"

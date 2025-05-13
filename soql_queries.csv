@@ -1,0 +1,2 @@
+class_name,start_linenumber,testClass,has_binding,soql_query,sosl_query,dml_operations
+TestClass.cls,3,false,false,"[SELECT Id, Name FROM Account WHERE Industry = 'Tech']",,
